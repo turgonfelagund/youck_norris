@@ -22,21 +22,3 @@ export const prepareTemplateAndEvents = async (userName)=>{
     execEvents();
 
 }
-
-//Preparar esto para el cambio de pantalla
-
-/* window.addEventListener('load',
-    async () => {
-        mainContent.remove();
-
-        body.appendChild(clonedTemplate);
-
-        await controller.loadCategories();
-
-        handleFilterInput();
-
-        //cellsEvents()
-
-        execEvents()
-    },
-    { capture: true }) */

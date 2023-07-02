@@ -48,14 +48,13 @@ async function loadCategories(filter = false, filteredCategories = null) {
     makeJokeByCategory();
 }
 
-//new method
 function filterCategories(categoryName) {
 
     if (categoryName.length === 0) {
         loadCategories();
     } else {
         const filteredCategories = allCategories.filter(i => i.startsWith(categoryName));
-        //Hasta aquí bien. Entrar en función
+
         loadCategories(true, filteredCategories)
     }
 

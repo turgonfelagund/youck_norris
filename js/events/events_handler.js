@@ -9,10 +9,6 @@ function handleEventsOfFilter(functionForFilter) {
 
     filter.removeEventListener('keyup', filterEvent);
 
-    //This approach doesnt work
-    //filter.addEventListener('keyup', eventFunctions[functionForFilter])
-
-    //This aproach works
     return filter.onkeyup = (e) => {
         filterEventFunctions[functionForFilter](e.target.value)
     }
