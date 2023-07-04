@@ -13,7 +13,7 @@ export const prepareTemplateAndEvents = async (userName)=>{
     clonedTemplate = templateContent.cloneNode(true);
 
     body.appendChild(clonedTemplate);
-    document.getElementById('greeting').textContent = `Bienvenido ${userName}`
+    document.getElementById('greeting').textContent = `Welcome ${userName}`
 
     setFilterInput();
 
